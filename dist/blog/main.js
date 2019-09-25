@@ -111,6 +111,10 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _post_list_post_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./post-list/post-list.component */ "./src/app/post-list/post-list.component.ts");
+/* harmony import */ var _post_list_item_post_list_item_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./post-list-item/post-list-item.component */ "./src/app/post-list-item/post-list-item.component.ts");
+
+
 
 
 
@@ -121,7 +125,9 @@ var AppModule = /** @class */ (function () {
     AppModule = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_2__["NgModule"])({
             declarations: [
-                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]
+                _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                _post_list_post_list_component__WEBPACK_IMPORTED_MODULE_4__["PostListComponent"],
+                _post_list_item_post_list_item_component__WEBPACK_IMPORTED_MODULE_5__["PostListItemComponent"],
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
@@ -131,6 +137,118 @@ var AppModule = /** @class */ (function () {
         })
     ], AppModule);
     return AppModule;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/post-list-item/post-list-item.component.html":
+/*!**************************************************************!*\
+  !*** ./src/app/post-list-item/post-list-item.component.html ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  post-list-item works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/post-list-item/post-list-item.component.scss":
+/*!**************************************************************!*\
+  !*** ./src/app/post-list-item/post-list-item.component.scss ***!
+  \**************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Bvc3QtbGlzdC1pdGVtL3Bvc3QtbGlzdC1pdGVtLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/post-list-item/post-list-item.component.ts":
+/*!************************************************************!*\
+  !*** ./src/app/post-list-item/post-list-item.component.ts ***!
+  \************************************************************/
+/*! exports provided: PostListItemComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostListItemComponent", function() { return PostListItemComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var PostListItemComponent = /** @class */ (function () {
+    function PostListItemComponent() {
+    }
+    PostListItemComponent.prototype.ngOnInit = function () {
+    };
+    PostListItemComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-post-list-item',
+            template: __webpack_require__(/*! ./post-list-item.component.html */ "./src/app/post-list-item/post-list-item.component.html"),
+            styles: [__webpack_require__(/*! ./post-list-item.component.scss */ "./src/app/post-list-item/post-list-item.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], PostListItemComponent);
+    return PostListItemComponent;
+}());
+
+
+
+/***/ }),
+
+/***/ "./src/app/post-list/post-list.component.html":
+/*!****************************************************!*\
+  !*** ./src/app/post-list/post-list.component.html ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>\n  post-list works!\n</p>\n"
+
+/***/ }),
+
+/***/ "./src/app/post-list/post-list.component.scss":
+/*!****************************************************!*\
+  !*** ./src/app/post-list/post-list.component.scss ***!
+  \****************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL3Bvc3QtbGlzdC9wb3N0LWxpc3QuY29tcG9uZW50LnNjc3MifQ== */"
+
+/***/ }),
+
+/***/ "./src/app/post-list/post-list.component.ts":
+/*!**************************************************!*\
+  !*** ./src/app/post-list/post-list.component.ts ***!
+  \**************************************************/
+/*! exports provided: PostListComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "PostListComponent", function() { return PostListComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var PostListComponent = /** @class */ (function () {
+    function PostListComponent() {
+    }
+    PostListComponent.prototype.ngOnInit = function () {
+    };
+    PostListComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-post-list',
+            template: __webpack_require__(/*! ./post-list.component.html */ "./src/app/post-list/post-list.component.html"),
+            styles: [__webpack_require__(/*! ./post-list.component.scss */ "./src/app/post-list/post-list.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], PostListComponent);
+    return PostListComponent;
 }());
 
 
