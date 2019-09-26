@@ -1,4 +1,5 @@
 import { Component, OnInit, Input } from '@angular/core';
+import { post } from 'selenium-webdriver/http';
 
 @Component({
   selector: 'app-post-list-item',
@@ -15,4 +16,11 @@ export class PostListItemComponent implements OnInit {
   ngOnInit() {
   }
 
+  loveIt(){
+    this.post.loveIts++;
+  }
+
+  dontLoveIt(){
+    this.post.loveIts--;
+  }
 }
