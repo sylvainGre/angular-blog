@@ -30,7 +30,7 @@ webpackEmptyAsyncContext.id = "./src/$$_lazy_route_resource lazy recursive";
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12\">\n      <h2>Posts</h2>\n      <app-post-list></app-post-list>\n    </div>\n  </div>\n</div>"
+module.exports = "<div class=\"container\">\n  <div class=\"row\">\n    <div class=\"col-xs-12\">\n      <h2> {{ title }} </h2>\n      <app-post-list></app-post-list>\n    </div>\n  </div>\n</div>"
 
 /***/ }),
 
@@ -61,7 +61,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var AppComponent = /** @class */ (function () {
     function AppComponent() {
-        this.title = 'blog';
+        this.title = 'My Posts';
         this.posts = [
             {
                 title: 'Mon premier post',
@@ -113,6 +113,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
 /* harmony import */ var _post_list_post_list_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./post-list/post-list.component */ "./src/app/post-list/post-list.component.ts");
 /* harmony import */ var _post_list_item_post_list_item_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./post-list-item/post-list-item.component */ "./src/app/post-list-item/post-list-item.component.ts");
+/* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
+
 
 
 
@@ -130,7 +132,8 @@ var AppModule = /** @class */ (function () {
                 _post_list_item_post_list_item_component__WEBPACK_IMPORTED_MODULE_5__["PostListItemComponent"],
             ],
             imports: [
-                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"]
+                _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
+                _angular_forms__WEBPACK_IMPORTED_MODULE_6__["FormsModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
@@ -150,7 +153,7 @@ var AppModule = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<p>\n  post-list-item works!\n</p>\n"
+module.exports = "<li>\n  <h4>Post</h4>\n</li>\n"
 
 /***/ }),
 
@@ -206,7 +209,7 @@ var PostListItemComponent = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<ul class=\"list-group\">\n  <app-post-list-item *ngFor=\"let appareil of appareils\"\n                [appareilName]=\"appareil.name\"\n                [appareilStatus]=\"appareil.status\"></app-appareil>\n</ul>"
+module.exports = "<ul class=\"list-group\">\n  <app-post-list-item ></app-post-list-item>\n</ul>"
 
 /***/ }),
 
@@ -237,6 +240,26 @@ __webpack_require__.r(__webpack_exports__);
 
 var PostListComponent = /** @class */ (function () {
     function PostListComponent() {
+        this.posts = [
+            {
+                title: 'Mon premier post',
+                content: 'Lorem Ipsum first post',
+                loveIts: 0,
+                created_at: new Date()
+            },
+            {
+                title: 'Mon deuxième post',
+                content: 'Lorem Ipsum second post',
+                loveIts: 0,
+                created_at: new Date()
+            },
+            {
+                title: 'Encore un post',
+                content: 'Lorem Ipsum one another post',
+                loveIts: 0,
+                created_at: new Date()
+            }
+        ];
     }
     PostListComponent.prototype.ngOnInit = function () {
     };

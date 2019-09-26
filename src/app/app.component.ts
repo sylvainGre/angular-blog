@@ -6,8 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'blog';
-
+  title = 'My Posts';
   posts = [
     {
       title : 'Mon premier post',
@@ -19,13 +18,13 @@ export class AppComponent {
       title : 'Mon deuxième post',
       content : 'Lorem Ipsum second post',
       loveIts : 0,
-      created_at : new Date()
+      created_at : '02'
     },
     {
       title : 'Encore un post',
       content : 'Lorem Ipsum one another post',
       loveIts : 0,
-      created_at : new Date()
+      created_at : '03'
     }
   ]
 }
